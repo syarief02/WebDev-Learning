@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Forms Demo</title>
+    </head>
+
+    <body>
+        <h1>Forms Demo</h1>
+
+
+        <form action="/tacos/">
+            <table>
+                <tbody>
+                    <tr>
+
+                        <td> <label for="username">Enter a Username: </label></td>
+                        <td> <input type="text" placeholder="username" id="username" name="username"></td>
+
+                    </tr>
+                    <tr>
+
+                        <td> <label for="password">Enter a Password: </label></td>
+                        <td> <input type="password" placeholder="password" id="password" name="password"></td>
+
+                    </tr>
+                    <tr>
+
+                        <td> <label for="color">Enter a color: </label></td>
+                        <td> <input type="color" id="color" name="color"></td>
+
+                    </tr>
+                    <tr>
+
+                        <td> <label for="number">Enter account number: </label></td>
+                        <td> <input type="number" placeholder="account number" id="number" name="number"></td>
+
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <td>
+                        <button>submit</button>
+                    </td>
+                </tfoot>
+            </table>
+        </form>
+        <hr>
+        <form action="https://www.youtube.com/results">
+            <input type="text" name="q" id="search_query">
+            <button>Search Youtube</button>
+        </form>
+        <hr>
+        <h2>Validation demo</h2>
+        <form action="/dummy">
+            <label for="first">Enter First Name</label>
+            <input type="text" name="first" id="first" required>
+            <p>
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username" required>
+            </p><button>Submit</button>
+        </form>
+    </body>
+
+</html>
