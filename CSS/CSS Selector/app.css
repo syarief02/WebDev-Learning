@@ -1,0 +1,14 @@
+/* universal selector */
+* {
+    background-color: cyan;
+}
+
+/* element selector */
+button {
+    font-size: 30px;
+}
+
+/* selector list */
+h1, h2 {
+color: darkslateblue;
+}
