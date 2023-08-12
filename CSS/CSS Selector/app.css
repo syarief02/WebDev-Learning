@@ -24,3 +24,8 @@ color: darkslateblue;
     background-color: darkgreen;
     color: blanchedalmond;
 }
+
+/* descendant selector  */
+p a {
+    color: brown;
+}
