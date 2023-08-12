@@ -1,6 +1,6 @@
 /* universal selector */
 * {
-    background-color:  rgb(246, 247, 247);
+    background-color: rgb(246, 247, 247);
 }
 
 /* element selector */
@@ -9,8 +9,9 @@ button {
 }
 
 /* selector list */
-h1, h2 {
-color: darkslateblue;
+h1,
+h2 {
+    color: darkslateblue;
 }
 
 /* id selector */
@@ -20,7 +21,7 @@ color: darkslateblue;
 }
 
 /* class selector */
-.button {
+.span {
     background-color: darkgreen;
     color: blanchedalmond;
 }
@@ -28,4 +29,27 @@ color: darkslateblue;
 /* descendant selector  */
 p a {
     color: brown;
+}
+
+/* adjacent selector */
+
+h2+input {
+    background-color: blueviolet;
+    color: aqua;
+}
+
+/* direct-descendant selector */
+footer>a {
+    background-color: darkgray;
+    color: gold;
+}
+
+/* attribute seletor */
+input[type="password"] {
+    color: blue;
+}
+
+/* pseudo class selector */
+body div:nth-child(odd) {
+    background-color: rgb(132, 150, 150);
 }
