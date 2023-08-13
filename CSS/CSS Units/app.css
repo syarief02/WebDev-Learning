@@ -1,0 +1,42 @@
+section {
+    background-color: gray;
+    width: 800px;
+    height: 800px;
+}
+
+div {
+    background-color: indianred;
+    width: 70%;
+    height: 20%;
+}
+
+h1 {
+    font-size: 40px;
+    border: 1px solid black;
+    line-height: 200%;
+}
+
+h2 {
+    font-size: 5em;
+    margin-left: 1em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+p {
+    font-size: 1em;
+}
+
+article {
+    font-size: 50px;
+}
+
+button {
+    font-size: 1em;
+    padding: 0 1em;
+    border-radius: 0.5em;
+    background-color: darkolivegreen;
+    color: white;
+}
