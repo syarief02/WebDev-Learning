@@ -1,0 +1,19 @@
+/* YOUR CODE GOES IN HERE */
+
+.card {
+    width: 210px;
+    border: 1px solid grey;
+    /*  border-width: 1px ;
+        border-style: solid ;
+        border-color: grey; */
+    border-radius: 5px;
+    text-align: center;
+}
+
+img {
+    width: 200px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgb(236, 183, 191);
+    border-radius: 50%;
+}
