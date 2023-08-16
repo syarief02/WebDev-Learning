@@ -1,0 +1,24 @@
+div {
+    border: 5px solid black;
+    width: 300px;
+    margin: 20px auto;
+    text-align: center;
+    font-size: 1.8em;
+    background-color: #2a9d8f;
+    color: #eae2b7;
+    padding: 0.7em;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: lighter;
+}
+
+div:nth-of-type(2n) {
+    background-color: #e9c46a;
+}
+
+div:nth-of-type(3n) {
+    background-color: #f4a261;
+}
+
+div:nth-of-type(4n) {
+    background-color: #e76f51;
+}
