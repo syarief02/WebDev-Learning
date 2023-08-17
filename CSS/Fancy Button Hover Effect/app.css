@@ -1,0 +1,52 @@
+body {
+    background-color: black;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    height: 95vh;
+    display: flex;
+}
+
+div {
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    display: flex;
+}
+
+button {
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    background: none;
+    color: green;
+    border: 2px solid;
+    padding: 1em 2em;
+    font-size: 2em;
+}
+
+button:hover {
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    background: none;
+    color: white;
+    border: 2px solid;
+    padding: 1em 2em;
+    font-size: 2em;
+    transform: translateY(-0.25em);
+    text-shadow: 1em;
+    box-shadow: 0 0.5em 0.5em -0.4em;
+    text-shadow: 0 0.5em 0.5em -0.4em;
+    border: 3px solid yellow;
+    cursor: pointer;
+}
