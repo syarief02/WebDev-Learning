@@ -50,4 +50,24 @@ button:hover {
     text-shadow: 0 0.5em 0.5em -0.4em;
     border: 3px solid yellow;
     cursor: pointer;
+    
+    transition: all 0.25s;
+}
+
+button:active {
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    background: none;
+    color: yellow;
+    border: 2px solid orange;
+    padding: 1em 2em;
+    font-size: 2em;
+    transform: translateY(0.25em);
+    box-shadow: 0 0 0 0;
+    text-shadow: 0 0 0 0;
+    transition: all 0.1s;
 }
