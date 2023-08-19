@@ -1,0 +1,18 @@
+body {
+    width: 60%;
+    margin: 0 auto;
+    background: peachpuff;
+}
+
+main {
+    font-size: larger;
+    margin: 0 auto;
+    margin-top: 100px;
+    font-family: 'Barriecito', cursive;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Dancing Script', cursive;
+}
