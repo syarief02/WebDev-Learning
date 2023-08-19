@@ -1,0 +1,23 @@
+section {
+    width: 80%;
+    height: 800px;
+    /* background-color: purple; */
+    margin: 0 auto;
+    /* background-image: url(http://mystic-dreams.m.y.pic.centerblog.net/o/79b9b6a9.jpg);
+    background-size:contain;
+    background-position: center ;
+    background-repeat: no-repeat; */
+    /* everything can be put together like this */
+    background: blue center/contain no-repeat url(http://mystic-dreams.m.y.pic.centerblog.net/o/79b9b6a9.jpg);
+
+}
+
+h1 {
+    font-size: 100px;
+    color: orange;
+    /* margin: 0 auto; */
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
