@@ -1,0 +1,25 @@
+section {
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
+    margin: 0 auto;
+    flex-direction: row-reverse;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+section div {
+    border: 1px solid black;
+    width: 20%;
+    height: 20%;
+    box-sizing: border-box;
+}
+
+div:nth-of-type(odd) {
+    background-color: black;
+}
+
+div:nth-of-type(even) {
+    background-color: red;
+}
