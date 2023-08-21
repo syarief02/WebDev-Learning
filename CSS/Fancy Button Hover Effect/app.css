@@ -65,7 +65,7 @@ button:active {
     color: yellow;
     border: 2px solid orange;
     padding: 1em 2em;
-    font-size: 2em;
+    font-size: 1em;
     transform: translateY(0.25em);
     box-shadow: 0 0 0 0;
     text-shadow: 0 0 0 0;
