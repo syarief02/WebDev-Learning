@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <title>Utilities</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    </head>
+
+    <body>
+        <header>
+            <!-- place navbar here -->
+        </header>
+        <main>
+
+            <div class="container">
+                <h1 class="display-1 mb-5">
+                    Utilities
+                </h1>
+                <!-- Border Utilities -->
+                <div class="row">
+                    <!-- shadow utilities -->
+                    <div class="col-md-4 border rounded border-primary shadow">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid quis ab nemo, dicta sint
+                        praesentium facilis consequuntur. Ad, sequi corporis. Reprehenderit harum magnam doloribus porro
+                        velit libero esse ipsa neque.
+                    </div>
+                </div>
+                <!-- padding  -->
+                <div>
+                    <button class="btn btn-primary p-0 ">Padding 0</button>
+                    <button class="btn btn-primary p-1 ">Padding 1</button>
+                    <!-- change display utilities  -->
+                    <button class="d-lg-block btn btn-primary p-2 ">Padding 2</button>
+                    <button class="btn btn-primary p-3 ">Padding 3</button>
+                    <button class="btn btn-primary p-4 ">Padding 4</button>
+                    <button class="btn btn-primary p-5 ">Padding 5</button>
+                </div>
+                <div class="my-5">
+                    <button class="btn btn-primary p-0 pt-5">Padding top</button>
+                    <button class="btn btn-primary p-0 ps-5">Padding start</button>
+                    <button class="btn btn-primary p-0 pb-5">Padding bottom</button>
+                    <button class="btn btn-primary p-0 pe-5">Padding end</button>
+                    <button class="btn btn-primary p-0 px-5">Padding X</button>
+                    <button class="btn btn-primary p-0 py-5">Padding Y</button>
+                </div>
+                <button class="btn btn-danger p-0 p-sm-1 p-md-2 p-lg3 p-xl-5">I CHANGE!</button>
+            </div>
+
+            <div class="card">
+                <img class="card-img-top" src="holder.js/100x180/" alt="Title">
+                <div class="card-body">
+                    <h4 class="card-title">Title</h4>
+                    <p class="card-text">Text</p>
+                </div>
+            </div>
+
+            <div class="dropdown open">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="triggerId" data-bs-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                            Dropdown Button
+                        </button>
+                <div class="dropdown-menu" aria-labelledby="triggerId">
+                    <button class="dropdown-item" href="#">Action</button>
+                    <button class="dropdown-item disabled" href="#">Disabled action</button>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center align-items-center">
+                <div class="spinner-border text-primary spinner-border-sm"
+                    role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+            </div>
+            <button class="btn btn-primary" type="button" disabled>
+                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                Loading...
+              </button>
+
+
+              <!-- Modal trigger button -->
+              <button type="button" class="d-block m-5 btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#modalId">
+                Launch
+              </button>
+              
+              <!-- Modal Body -->
+              <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+              <div class="modal fade" id="modalId" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalTitleId">Modal title</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            Body
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save</button>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              
+              
+              <!-- Optional: Place to the bottom of scripts -->
+              <script>
+                const myModal = new bootstrap.Modal(document.getElementById('modalId'), options)
+              
+              </script>
+        </main>
+        <footer>
+            <!-- place footer here -->
+        </footer>
+        <!-- Bootstrap JavaScript Libraries -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+            integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+            </script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+            integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+            </script>
+    </body>
+
+</html>
