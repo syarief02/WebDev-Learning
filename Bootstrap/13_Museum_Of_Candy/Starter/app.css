@@ -36,3 +36,20 @@ body {
         font-size: 3rem;
     }
 }
+
+h2 {
+    font-weight: 100;
+    color: #ea1c2c;
+    font-size: 2.5rem;
+}
+
+.lead {
+    color: #f498b8;
+    font-weight: 100;
+    font-size: 1.125rem;
+    line-height: 2;
+}
+
+section{
+    margin-bottom: 100px;
+}
