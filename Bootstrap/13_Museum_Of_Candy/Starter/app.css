@@ -50,6 +50,10 @@ h2 {
     line-height: 2;
 }
 
-section{
+section {
     margin-bottom: 100px;
+}
+
+.navbar.scrolled {
+    background: rgb(222, 192, 222);
 }
