@@ -11,8 +11,9 @@ const airplaneSeats = [
     ['Rin', 'Sakura', 'Francisco']
 ];
 
+console.log("arrayBefore: " + airplaneSeats);
 // YOUR CODE GOES BELOW THIS LINE:
 
-airplaneSeats[3][1]="Hugo";
-
-console.log(airplaneSeats);
+airplaneSeats[3][1] = "Hugo";
+console.log("add " + airplaneSeats[3][1])
+console.log("arrayAfter: " + airplaneSeats);
