@@ -23,4 +23,5 @@ while (input.toLowerCase() !== "quit") {
     input = prompt('what would you like to do?');
 }
 
-console.log("you quit the app")
+console.log("you quit the app")let input = prompt("what would you like to do?")
+while (!== "quit")
