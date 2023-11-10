@@ -8,6 +8,7 @@ function randColor() {
     const bgColor = newRandColor();
     document.body.style.background = bgColor;
     setTextColor(bgColor);
+    h1.textContent = newRandColor();
 }
 
 function newRandColor() {
