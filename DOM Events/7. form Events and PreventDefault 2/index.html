@@ -10,9 +10,14 @@
     <body>
         <h1>My Form</h1>
         <form action="/shelter" target="_blank" id="shelterForm">
-            <input type="text">
+            <input type="text" id="catName">
             <button>Submit</button>
+            <button type="button" id="reset">Reset</button>
         </form>
+        <!-- <button id="reset">Reset</button> -->
+        <h2>Available Cats</h2>
+        <ul id="cats"></ul>
+
         <script src="./app.js"></script>
     </body>
 
