@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>form events and preventDefault</title>
+    </head>
+
+    <body>
+        <h1>My Form</h1>
+        <form action="/shelter" target="_blank" id="shelterForm">
+            <input type="text" id="catName">
+            <button>Submit</button>
+            <button type="button" id="reset">Reset</button>
+        </form>
+        <!-- <button id="reset">Reset</button> -->
+        <h2>Available Cats</h2>
+        <ul id="cats"></ul>
+
+        <script>
+            const form = document.querySelector("#shelterForm");
+            const input = document.querySelector("#catName");
+            const list = document.querySelector("#cats");
+
+            form.addEventListener("submit", function (e) {
+                e.preventDefault();
+                const catName = input.value;
+                const newLi = document.createElement("LI");
+                newLi.append(catName);
+                const fragment = document.createDocumentFragment();
+                fragment.append(newLi);
+                list.append(fragment);
+                input.value = "";
+            });
+
+            const reset = document.querySelector("#reset");
+
+            reset.addEventListener("click", function () {
+                list.innerHTML = '';
+            });
+        </script>
+    </body>
+
+</html>
