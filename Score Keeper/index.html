@@ -1,16 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Score Keeper</title>
-</head>
-<body>
-    <h1><span id="p1display">0</span> to <span id="p2display">0</span></h1>
-    <button id="p1button">+1 Player One</button>
-    <button id="p2button">+1 Player Two</button>
-    <button id="reset">Reset</button>
 
-    <script src="./app.js"></script>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Score Keeper</title>
+        <link rel="stylesheet" href="./app.css">
+    </head>
+
+    <body>
+        <h1><span id="p1display">0</span> to <span id="p2display">0</span></h1>
+
+        <select name="" id="playto">
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+        </select>
+        <button id="p1button">+1 Player One</button>
+        <button id="p2button">+1 Player Two</button>
+        <button id="reset">Reset</button>
+
+        <script src="./app.js"></script>
+    </body>
+
 </html>
