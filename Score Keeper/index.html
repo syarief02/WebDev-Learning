@@ -10,53 +10,58 @@
     </head>
 
     <body>
-        <div class="container">
-            <div class="columns">
-                <div class="column is-half is-offset-one-quarter">
+        <section class="section">
+            <div class="container">
+                <div class="columns">
+                    <div class="column is-half is-offset-one-quarter">
 
-                    <div class="card">
-                        <header class="card-header">
-                            <p class="card-header-title">
-                                Component
-                            </p>
-                            <button class="card-header-icon" aria-label="more options">
-                                <span class="icon">
-                                    <i class="fas fa-angle-down" aria-hidden="true"></i>
-                                </span>
-                            </button>
-                        </header>
-                        <div class="card-content">
-                            <div class="content">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.
-                                <a href="#">@bulmaio</a>. <a href="#">#css</a> <a href="#">#responsive</a>
-                                <br>
-                                <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                        <div class="card">
+                            <div class="card-image">
+                                <figure class="image is-2by1">
+                                    <img src="https://thevolleyllama.com/wp-content/uploads/2019/03/AdobeStock_89426340.jpeg"
+                                        alt="pingpong">
+                                </figure>
                             </div>
+                            <header class="card-header">
+                                <p class="card-header-title">
+                                    Ping Pong Score Keeper
+                                </p>
+                                <button class="card-header-icon" aria-label="more options">
+                                    <span class="icon">
+                                        <i class="fas fa-angle-down" aria-hidden="true"></i>
+                                    </span>
+                                </button>
+                            </header>
+                            <div class="card-content">
+                                <div class="content">
+
+                                    <h1 class="title is-1"><span id="p1display">0</span> to <span
+                                            id="p2display">0</span>
+                                    </h1>
+                                    <p class="subtitle">Use the buttons below to keep score.</p>
+                                    <label for="playto" class="label is-large is-inline">Playing to</label>
+                                    <div class="select is-rounded">
+                                        <select name="" id="playto">
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <footer class="card-footer">
+                                <button id="p1button" class="button is-primary card-footer-item is-large">+1 Player One</button>
+                                <button id="p2button" class="button is-info card-footer-item is-large">+1 Player Two</button>
+                                <button id="reset" class="button is-danger card-footer-item is-large">Reset</button>
+                            </footer>
                         </div>
-                        <footer class="card-footer">
-                            <a href="#" class="card-footer-item">Save</a>
-                            <a href="#" class="card-footer-item">Edit</a>
-                            <a href="#" class="card-footer-item">Delete</a>
-                        </footer>
                     </div>
                 </div>
             </div>
-        </div>
-
-        <h1><span id="p1display">0</span> to <span id="p2display">0</span></h1>
-
-        <select name="" id="playto">
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-        </select>
-        <button id="p1button">+1 Player One</button>
-        <button id="p2button">+1 Player Two</button>
-        <button id="reset">Reset</button>
-
+        </section>
         <script src="./app.js"></script>
     </body>
 
