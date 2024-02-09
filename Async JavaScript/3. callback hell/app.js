@@ -17,10 +17,34 @@ document.body.style.transition = "1s background-color";
 //     }, 1000);
 // }, 1000);
 
-function delayedColorChange(newColor, delay) {
+function delayedColorChange(newColor, delay, doNext) {
     setTimeout(function () {
         document.body.style.backgroundColor = newColor;
+        doNext()
     }, delay);
 }
 
-delayedColorChange('olive', 3000);
+delayedColorChange('red', 1000, function () {
+    delayedColorChange('orange', 1000, function () {
+        delayedColorChange('yellow', 1000, function () {
+            delayedColorChange('green', 1000, function () {
+                delayedColorChange('blue', 1000, function () {
+                    delayedColorChange('indigo', 1000, function () {
+                        console.log("all done");
+                    });
+                });
+            });
+        });
+    });
+});
+
+//the common callback hell:
+searchMoviesAPI('amadeus', function () {
+    saveToMyDB(movies, function () {
+        //if it works, run this
+    }, function () {
+        //if it doesn't work, run this
+    })
+}, function () {
+    //if API is down, or request failed
+})
