@@ -6,8 +6,8 @@ setTimeout(function () {
         document.body.style.backgroundColor = 'orange';
         setTimeout(function () {
             document.body.style.backgroundColor = 'yellow';
-        }, 3000);
-    }, 2000);
+        }, 1000);
+    }, 1000);
 }, 1000);
 
 
