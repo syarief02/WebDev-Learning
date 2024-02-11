@@ -13,8 +13,25 @@ function fakeRequestCallback(url, success, failure) {
 fakeRequestCallback('books.com',
     function (response) {
         console.log(response);
+        fakeRequestCallback('books.com',
+            function (response) {
+                console.log("second callback successfull");
+                fakeRequestCallback('books.com',
+                    function (response) {
+                        console.log("third callback successfull");
+                    },
+                    function (err) {
+                        console.log(err);
+                    }
+                );
+            },
+            function (err) {
+                console.log(err);
+            }
+        );
+
     },
     function (err) {
         console.log(err);
     }
-)
+);
