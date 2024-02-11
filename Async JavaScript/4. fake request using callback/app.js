@@ -7,5 +7,5 @@ function fakeRequestCallback(url, success, failure) {
         else {
             success('here is your fake data from ${url}');
         }
-    })
+    }, delay)
 }
