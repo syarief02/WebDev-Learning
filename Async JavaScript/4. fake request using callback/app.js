@@ -5,12 +5,12 @@ function fakeRequestCallback(url, success, failure) {
             failure('connection timeout :(');
         }
         else {
-            success('here is your fake data from ${url}');
+            success(`here is your fake data from ${url}`);
         }
     }, delay)
 }
 
-fakeRequestCallback(books.com,
+fakeRequestCallback('books.com',
     function (response) {
         console.log(response);
     },
