@@ -9,3 +9,12 @@ function fakeRequestCallback(url, success, failure) {
         }
     }, delay)
 }
+
+fakeRequestCallback(books.com,
+    function (response) {
+        console.log(response);
+    },
+    function (err) {
+        console.log(err);
+    }
+)
