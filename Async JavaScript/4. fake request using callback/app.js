@@ -1,13 +1,13 @@
 function fakeRequestCallback(url, success, failure) {
     const delay = 500 + Math.floor(Math.random() * 4500);
     setTimeout(function () {
-        if (delay > 4000) {
+        if (delay > 3000) {
             failure('connection timeout :(');
         }
         else {
             success(`here is your fake data from ${url}`);
         }
-    }, delay)
+    }, delay);
 }
 
 fakeRequestCallback('books.com',
@@ -23,15 +23,15 @@ fakeRequestCallback('books.com',
                     function (err) {
                         console.log(err);
                     }
-                );
+                )
             },
             function (err) {
                 console.log(err);
             }
-        );
+        )
 
     },
     function (err) {
         console.log(err);
     }
-);
+)
