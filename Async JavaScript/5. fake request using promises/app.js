@@ -12,11 +12,23 @@ function fakeRequestPromise(url) {
     })
 }
 
-let promTest = fakeRequestPromise('blablaabl.com');
-
-promTest
+fakeRequestPromise('blablaabl.com/page1')
     .then(function () {
-        console.log("connection success");
+        console.log("connection success 1");
+        fakeRequestPromise('blablaabl.com/page2')
+            .then(function () {
+                console.log("connection success 2");
+                fakeRequestPromise('blablaabl.com/page3')
+                    .then(function () {
+                        console.log("connection success 3");
+                    })
+                    .catch(function () {
+                        console.log("error");
+                    })
+            })
+            .catch(function () {
+                console.log("error");
+            })
     })
     .catch(function () {
         console.log("error");
