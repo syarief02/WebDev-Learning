@@ -8,8 +8,16 @@ function fakeRequestPromise(url) {
             else {
                 resolve(`here's your fake data from ${url}`);
             }
-        })
+        }, delay)
     })
 }
 
 let promTest = fakeRequestPromise('blablaabl.com');
+
+promTest
+    .then(function () {
+        console.log("connection success");
+    })
+    .catch(function () {
+        console.log("error");
+    })
