@@ -11,3 +11,8 @@ function fakeRequestPromise(url) {
         }, delay)
     })
 }
+
+async function makeTwoRequest() {
+    let data1 = await fakeRequestPromise('/page1');
+    console.log(data1);
+}
