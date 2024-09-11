@@ -1,0 +1,82 @@
+name: a commit
+
+on:
+  # Triggers the workflow on push or pull request events but only for the "main" branch
+  push:
+    branches: main
+  pull_request:
+    branches: main
+
+  schedule:
+    - cron: "*/57 * */4 * *" # 50 minutes every 2 days
+  # - cron: "0 7,9,11 * * 1,3" # See https://crontab.guru/#0_7,9,11_*_*_1,3
+
+  # - cron: "0 7,9,11,12,15 * * 1" # monday
+  # - cron: "*/55 * * * 2" # tuesday
+  # - cron: "*/50 * * * 3" # wednesday
+  # - cron: "*/40 * * * 4" # thursday
+  # - cron: "*/45 * * * 5" # friday
+  # - cron: "*/55 * * * 6" # saturday
+  # - cron: "*/59 * * * 0" # sunday
+
+jobs:
+  auto_commit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: DEBUG
+        run: echo "::debug::Ref = ${{github.ref}}"
+      - uses: actions/checkout@v3
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+
+      - name: Update Variable
+        run: |
+          # Check if the file exists
+          if [ -f app.js ]; then
+            # Read the last variable number
+            last_var=$(grep -oP 'let a\K[0-9]+' app.js | tail -n 1)
+            # Increment the variable number
+            new_var=$((last_var + 1))
+          else
+            # If the file doesn't exist, start with 1
+            new_var=1
+          fi
+          # Get the current date and time
+          current_datetime=$(date +'%Y-%m-%d %H:%M:%S')
+          # Prepend the current date and time as a comment
+          echo "// Updated on $current_datetime" > /tmp/newfile
+          # Append the existing content
+          cat app.js >> /tmp/newfile
+          # Append the new variable at the end of the file
+          echo "int a$new_var = 1;" >> /tmp/newfile
+          # Replace the original file
+          mv /tmp/newfile app.js
+
+      - name: Commit changes
+        run: |
+          git config --local user.email "syarief.azman@gmail.com"
+          git config --local user.name "Syarief Azman"
+          git add -A
+
+          arr[0]="😂 commit"
+          arr[1]="😱 commit"
+          arr[2]="👿 commit"
+          arr[3]="💩 commit"
+          arr[4]="🙏 commit"
+          arr[5]="🙈 commit"
+          arr[6]="🐐 commit"
+          arr[7]="🤖 commit"
+          arr[8]="🟩 commit"
+          arr[9]="👻 commit"
+
+          rand=$[$RANDOM % ${#arr[@]}]
+
+          git commit -m "${arr[$rand]}"
+
+      - name: GitHub Push
+        uses: ad-m/github-push-action@v0.6.0
+        with:
+          directory: "."
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.ref }}
