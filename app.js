@@ -25,9 +25,5 @@ const getStarWarsPerson = async (id) => {
 };
 
 getStarWarsPerson(10);
-int a1 = 1;
-int a1 = 1;
-int a1 = 1;
-int a1 = 1;
-int a1 = 1;
+
 let a1 = 1;
