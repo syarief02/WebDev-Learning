@@ -49,7 +49,7 @@ jobs:
           # Append the existing content
           cat app.js >> /tmp/newfile
           # Append the new variable at the end of the file
-          echo "int a$new_var = 1;" >> /tmp/newfile
+          echo "let a$new_var = 1;" >> /tmp/newfile
           # Replace the original file
           mv /tmp/newfile app.js
 
